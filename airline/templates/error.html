@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+	Error
+{% endblock %}
+
+
+{% block body %}
+	
+	<h1>Error</h1>
+
+	{{message}}
+
+	<h4>
+		<a href="{{ url_for('flights')}}">
+			Back to flights
+		</a>
+	</h4>
+
+	<h4>
+		<a href="{{ url_for('index')}}">
+			Back to home
+		</a>
+	</h4>
+	
+{% endblock %}
+			
+
+
+
+
+

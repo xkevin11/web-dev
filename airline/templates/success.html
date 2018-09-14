@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+	Success
+{% endblock %}
+
+
+{% block body %}
+	
+	<h1>Success</h1>
+
+	{{name}}, you have successfully booked the flight!
+
+	<h4>
+		<a href="{{ url_for('flights')}}">
+			Back to flights
+		</a>
+	</h4>
+
+	<h4>
+		<a href="{{ url_for('index')}}">
+			Back to home
+		</a>
+	</h4>
+	
+{% endblock %}
+			
+
+
+
+
+
